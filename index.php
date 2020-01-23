@@ -1,35 +1,24 @@
 <?php 
 
-	$radius = 25;
-	$pi = 3.14;
+	// multidimensional array
 
-	// basic operators - *, /, +, -, ^
+	$blogs = [
+		['title' => 'mario party', 'author' => 'mario', 'content' => 'lorem'],
+		['title' => 'mariokart cheats', 'author' => 'toad', 'content' => 'lorem'],
+		['title' => 'zelda hidden chests', 'author' => 'link', 'content' => 'lorem']
+	];
 
-	echo $pi * $radius^2;
+	//print_r($blogs);
+	//print_r($blogs[2]);
+	//echo $blogs[1]['title'];
+	//echo count($blogs);
 
-	// order of operation (B I D M A S)
+	$blogs[] = ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem'];
+	//print_r($blogs);
 
-	echo 2 * (4 + 5) / 3;
+	$popped = array_pop($blogs);
+	//print_r($popped);
 
-	// increment & decrement operators
-
-	echo $radius++;
-	echo $pi--;
-
-	// shorthand operations
-
-	$age = 20;
-	$age += 10; // age becomes 30
-	$age -= 5; // age becomes 25
-	$age *= 2; // age becomes 50
-
-	echo $age;
-
-	// number functions
-
-	echo floor($pi);
-	echo ceil($pi);
-	echo pi();
 
 ?>
 
@@ -40,7 +29,7 @@
 </head>
 <body>
 
-	<p><?php echo $age; ?></p>
+	<p></p>
 
 </body>
 </html>
