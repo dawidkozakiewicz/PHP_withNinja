@@ -1,67 +1,36 @@
 <?php 
 
-	// indexed arrays
+	$ninjas = ['shaun', 'ryu', 'yoshi'];
 
-	$peopleOne = ['shaun', 'crystal', 'ryu'];
-	//echo $peopleOne[1];
+	// for($i = 0; $i < count($ninjas); $i++){
+	// 	echo $ninjas[$i] . '<br />';
+	// }
 
-	$peopleTwo = array('ken', 'chun-li');
-	//echo $peopleTwo[1];
+	// foreach($ninjas as $ninja){
+	// 	echo $ninja . ' <br/>';
+	// }
 
-	$ages = [20, 30, 40, 50];
-
-	//print_r($ages);
-
-	$ages[1] = 25;
-	//print_r($ages);
-
-	$ages[] = 10;
-	array_push($ages, 70);
-	//print_r($ages);
-
-	//echo array_pop($ages);
-	//print_r($ages);
-
-	//echo count($ages);
-
-	$peopleThree = array_merge($peopleOne, $peopleTwo);
-	//print_r($peopleThree);
-
-	// associative array (key & value pairs)
-
-	$ninjasOne = ['shaun' => 'black', 'mario' => 'orange', 'luigi' => 'brown'];
-	//echo $ninjasOne['mario'];
-	//print_r($ninjasOne);
-
-	$ninjasTwo = array('bowser' => 'green', 'peach' => 'yellow');
-	//print_r($ninjasTwo);
-
-	$ninjasTwo['toad'] = 'pink';
-
-	//echo count($ninjasTwo);
-
-	$ninjasThree = array_merge($ninjasOne, $ninjasTwo);
-	print_r($ninjasThree);
-
-
-	// multidimensional array
-
-	$blogs = [
-		['title' => 'mario party', 'author' => 'mario', 'content' => 'lorem'],
-		['title' => 'mariokart cheats', 'author' => 'toad', 'content' => 'lorem'],
-		['title' => 'zelda hidden chests', 'author' => 'link', 'content' => 'lorem']
+	$products = [
+		['name' => 'shiny star', 'price' => 20],
+		['name' => 'green shell', 'price' => 10],
+		['name' => 'red shell', 'price' => 15],
+		['name' => 'gold coin', 'price' => 5],
+		['name' => 'lightning bolt', 'price' => 40],
+		['name' => 'banana skin', 'price' => 2]
 	];
 
-	//print_r($blogs);
-	//print_r($blogs[2]);
-	//echo $blogs[1]['title'];
-	//echo count($blogs);
+	// foreach($products as $product){
+	// 	echo $product['name'] .' - '. $product['price'];
+	// 	echo '<br />';
+	// }
 
-	$blogs[] = ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem'];
-	//print_r($blogs);
+	$i = 0;
 
-	$popped = array_pop($blogs);
-	//print_r($popped);
+	while($i < count($products)){
+		echo $products[$i]['name'];
+		echo '<br />';
+		$i++;
+	}
 
 
 ?>
@@ -73,7 +42,13 @@
 </head>
 <body>
 
-	<p></p>
+	<h1>Products</h1>
+	<ul>
+		<?php foreach($products as $product){ ?>
+			<h3><?php echo $product['name']; ?></h3>
+			<p>£<?php echo $product['price']; ?></p>
+		<?php } ?>
+	</ul>
 
 </body>
 </html>
