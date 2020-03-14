@@ -19,15 +19,17 @@
 
 	// $formatted = formatProduct(['name' => 'gold star', 'price' => 20]);
 	// echo $formatted;
+	// echo 'hello, ninjas';
 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PHP Tutorials</title>
+	<title>my first PHP file</title>
 </head>
 <body>
 
+	<h1><?php echo 'hello, ninjas' ?></h1>
 </body>
 </html>
