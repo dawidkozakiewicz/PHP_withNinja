@@ -16,8 +16,10 @@
 	$blogs[] = ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem'];
 	//print_r($blogs);
 
-	$popped = array_pop($blogs);
-	//print_r($popped);
+	 $popped = array_pop($blogs);
+	 print_r($popped);
+	 print_r($blogs);
+
 
 
 ?>
