@@ -3,11 +3,11 @@
 	$radius = 25;
 	$pi = 3.14;
 
-	// basic operators - *, /, +, -, ^
+	// basic operators - *, /, +, -, **
 
 	echo $pi * $radius^2;
 
-	// order of operation (B I D M A S)
+	// order of operation (B I D M A S) Brackets, Indices, Division, Multiplication, Addition, Subtraction.
 
 	echo 2 * (4 + 5) / 3;
 
