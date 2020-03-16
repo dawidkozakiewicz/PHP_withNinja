@@ -1,6 +1,5 @@
 <?php 
 
-<<<<<<< HEAD
 	$ninjas = ['shaun', 'ryu', 'yoshi'];
 
 	// for($i = 0; $i < count($ninjas); $i++){
@@ -10,7 +9,6 @@
 	// foreach($ninjas as $ninja){
 	// 	echo $ninja . ' <br/>';
 	// }
-=======
 	// conditional statements
 	
 	$price = 20;
@@ -22,7 +20,6 @@
 	} else {
 		echo 'condition not met';
 	}
->>>>>>> 11_conditional_statements
 
 	$products = [
 		['name' => 'shiny star', 'price' => 20],
@@ -33,14 +30,12 @@
 		['name' => 'banana skin', 'price' => 2]
 	];
 
-<<<<<<< HEAD
 	// foreach($products as $product){
 	// 	echo $product['name'] .' - '. $product['price'];
 	// 	echo '<br />';
 	// }
 
 	$i = 0;
-=======
 	foreach($products as $product){
 
 		if($product['price'] < 15 && $product['price'] > 2){
@@ -50,7 +45,6 @@
 		if($product['price'] > 20 || $product['price'] < 10){
 			echo $product['name'] . '<br />';
 		}
->>>>>>> 11_conditional_statements
 
 	while($i < count($products)){
 		echo $products[$i]['name'];
